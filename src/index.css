@@ -62,7 +62,7 @@ body {
 }
 
 /* =========text animation===========  */
-.pump {
+.pump{
   animation: pump 0.8s ease-in;
 }
 @keyframes pump {
@@ -99,5 +99,11 @@ body {
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width:700px){
+  .large-header{
+    display: none;
   }
 }
