@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1270px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: black;
+}
+/* ====background animation css========== */
+.large-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  z-index: -999;
+  background-position: center;
+}
+
+.font-walter{
+  font-family: "Walter Turncoat", cursive;
+}
+.translate-center {
+  transform: translate(-50%, -50%);
+}
+
+/* =========text animation===========  */
+.pump {
+  animation: pump 0.8s ease-in;
+}
+@keyframes pump {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
