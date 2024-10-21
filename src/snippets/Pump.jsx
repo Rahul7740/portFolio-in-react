@@ -1,41 +1,38 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 function Pump(props) {
-  useEffect(() => {
-    const pump1 = document.querySelectorAll(".aabbcc");
-
-    for (let i of pump1) {
-      if (i) {
-        // Split text into characters and wrap them in spans
-        i.innerHTML = i.innerHTML
+  const pump = props.array;
+ useEffect(() => {
+    pump.current.forEach((e) => {
+      if (e) {
+        // Split the text and wrap each character in a span
+        e.innerHTML = e.innerText
           .split("")
-          .map(
-            (char) =>
-              char !== " "
-                ? `<span class="animation inline-block pump">${char}</span>`
-                : `<span class="space">${char}</span>` // Add a specific class for spaces if needed
+          .map((char) =>
+            char !== " "
+              ? `<span class="animation inline-block ">${char}</span>`
+              : `<span>${char}</span>`
           )
           .join("");
 
-        // Get all spans within the current element
-        const spans = i.querySelectorAll(".pump");
+        const spans = e.querySelectorAll(".animation");
 
         spans.forEach((span) => {
           span.addEventListener("mouseover", () => {
-            span.classList.add("hovered");
+            span.classList.add("pump");
           });
-
           span.addEventListener("mouseout", () => {
             setTimeout(() => {
-              span.classList.remove("hovered");
-            }, 600); // Adjust timeout as needed
+              span.classList.remove("pump");
+            }, 600);
           });
         });
       }
-    }
-    return () => {
-      pump1.forEach((i) => {
-        const spans = i.querySelectorAll(".pump");
+    });
+
+    pump.current.forEach((e) => {
+      if (e) {
+        const spans = e.querySelectorAll(".pump");
         spans.forEach((span) => {
           span.removeEventListener("mouseover", () => {
             span.classList.add("hovered");
@@ -46,9 +43,9 @@ function Pump(props) {
             }, 600);
           });
         });
-      });
-    };
-  }, []);
+      }
+    });
+  }, [pump]);
 }
 
 export default Pump;

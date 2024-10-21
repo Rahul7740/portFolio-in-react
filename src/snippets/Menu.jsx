@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "../Context/ThemeChange";
 import jsonData from "../json/menu.json";
 import { NavLink } from "react-router-dom";
@@ -7,6 +7,9 @@ function Menu() {
   const [indexx, setIndexx] = useState(0);
   const [menu, setMenu] = useState(false);
   const { theme } = useTheme();
+
+
+
   return (
     <div
       className={`inline-flex items-center flex-col md:flex-row gap-3 p-[20px_6px] md:p-[6px_20px] fixed bottom-2/4
@@ -20,6 +23,7 @@ function Menu() {
         <NavLink
           onClick={() => {
             setIndexx(index);
+            setMenu(false)
           }}
           key={index}
           to={item.to}
@@ -31,7 +35,7 @@ function Menu() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill={indexx === index ? "#ef4444" : "gray"}
-            className="w-[45px] h-[45px] transition-all duration-300"
+            className="scale-aniamtion w-[45px] h-[45px] transition-all duration-300"
           >
             {item.secondPath && <path d={item.secondPath}></path>}
             <path fillRule="evenodd" d={item.path} clipRule="evenodd"></path>
