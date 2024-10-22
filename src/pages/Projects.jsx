@@ -16,9 +16,11 @@ function Projects() {
           {jsonData.map((item, index) => (
             <div
               key={index}
-              className={`down-up-animaiton group flex flex-col p-4 rounded-2xl bg-white bg-opacity-60 backdrop-blur-lg transition-all duration-500 transform hover:scale-[1.05]  hover:backdrop-blur-none ${
-                theme ? "shadow-2xl" : "shadow-[0_1px_20px_#ffffffa8]"
-              }  relative overflow-hidden"`}
+              className={`down-up-animaiton group flex flex-col p-4 rounded-2xl bg-opacity-60 backdrop-blur-lg transition-all duration-500 transform hover:scale-[1.05]  hover:backdrop-blur-none ${
+                theme
+                  ? "shadow-2xl bg-white  border-black"
+                  : "bg-black border-white "
+              }  relative overflow-hidden border-solid border-[1px] hover:border-[#E0443B]`}
             >
               <div className="relative overflow-hidden rounded-lg">
                 <img
@@ -40,9 +42,10 @@ function Projects() {
 
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   ref={(el) => el && pump.current.push(el)}
                   href={item.link}
-                  className="mt-2 text-[18x] font-bold bg-slate-300 p-[3px_10px] border-[1px] border-solid border-blue-700 rounded  text-blue-600 hover:text-blue-800 transition-colors"
+                  className="mt-2 text-[18x] font-bold bg-transparent transition-all duration-300 p-[3px_10px] border-[1px] border-solid border-white hover:border-[#e0433b] rounded   hover:bg-[#e0433b] text-white "
                 >
                   Link
                 </a>

@@ -7,10 +7,10 @@ function Profile() {
   const { theme } = useTheme();
   const pump = useRef([]);
   return (
-    <section>
+    <section className="">
       <div className="container">
         <Heading name="About Me:" />
-        <div className="flex flex-col-reverse md:grid grid-cols-2 lg:gap-8 items-center ">
+        <div className="flex flex-col-reverse md:grid grid-cols-2 lg:gap-8 items-center h-[80vh] justify-center">
           <div>
             <h1
               className={`text-[25px] lg:text-[30px] ${

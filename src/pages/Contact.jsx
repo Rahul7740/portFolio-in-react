@@ -10,7 +10,7 @@ function Contact() {
     <section>
       <div className="container">
         <Heading name="Contect:" />
-        <div className="flex flex-col-reverse md:grid grid-cols-2 items-center">
+        <div className="flex flex-col-reverse md:grid grid-cols-2 items-center h-[80vh] justify-center items-center">
           <div className="w-full">
             <h3
               ref={(el) => el && pump.current.push(el)}

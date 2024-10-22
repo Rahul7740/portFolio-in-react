@@ -8,7 +8,7 @@ function Home() {
   const pump = useRef([]);  
     
   return (
-    <div className="w-full md:h-[100vh] flex items-center justify-center">
+    <section className="w-full md:h-[100vh] flex items-center justify-center">
       <div className="grid grid-cols-1 gap-10 md:gap-0 md:grid-cols-[2fr_1fr] lg:grid-cols-2 items-center justify-center h-full">
         <div className="flex flex-col w-full items-center h-full justify-center scale-aniamtion">
           <h1
@@ -68,7 +68,7 @@ function Home() {
         </div>
       </div>
       <Pump array={pump} />;
-    </div>
+    </section>
   );
 }
 
