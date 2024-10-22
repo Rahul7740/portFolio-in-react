@@ -210,3 +210,36 @@ html::-webkit-scrollbar-corner {
 textarea {
   resize: none; /* Removes the resize button */
 }
+
+.active svg{
+  fill: #ef4444;
+}
+
+/* =======cursor======== */
+
+
+.cursor-blip {
+  width: 12px;
+  height: 12px;
+  background-color: #ff5733; /* Blip color */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1001; /* Higher z-index than flare */
+  box-shadow: none; /* No shadow on blip */
+}
+
+.cursor-flare {
+  width: 50px; /* Flare size */
+  height: 50px; /* Flare size */
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(255, 87, 51, 0) 70%);
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Lower z-index than blip */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s;
+  filter: blur(10px); /* Soft blur effect for flare */
+}
+
