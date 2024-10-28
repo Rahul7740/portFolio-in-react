@@ -30,8 +30,8 @@ const FireCursor = () => {
 
   return (
     <>
-      <div className="cursor-flare" />
-      <div className="cursor-blip" />
+      <div className="cursor-flare sm:inline-block hidden" />
+      <div className="cursor-blip sm:inline-block hidden" />
     </>
   );
 };

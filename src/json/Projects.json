@@ -1,24 +1,30 @@
 [
   {
     "name": "Start-in-react",
-    "link": "https://github.com/Rahul7740/Start-website-tailwind.git",
+    "link": "https://start-project.netlify.app/",
     "img": "start-project.JPG"
   },
   {
     "name": "CoinDesk-in-react",
-    "link": "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    "link": "https://coin-desk.netlify.app/",
     "img": "CoinDesk-in-react.png"
   },
   {
     "name": "BuyNow-in-react",
-    "link": "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    "link": "https://buy-now-react.netlify.app/",
     "img": "buynow-in-react.JPG"
   },
   {
     "name": "Exclusive-in-react",
-    "link": "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    "link": "https://exclusive-react.netlify.app/",
     "img": "Exclusive-in-react.JPG"
   },
+  {
+    "name": "Calculator",
+    "link": "https://rahul7740.github.io/calculator/",
+    "img": "calculator.PNG"
+  },
+  
   {
     "name": "meditation-center",
     "link": "https://rahul7740.github.io/Meditation-center/",
