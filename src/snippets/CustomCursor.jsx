@@ -31,7 +31,7 @@ const FireCursor = () => {
   return (
     <>
       <div className="cursor-flare sm:inline-block hidden" />
-      <div className="cursor-blip sm:inline-block hidden" />
+      <div className="cursor-blip  hidden" />
     </>
   );
 };

@@ -228,6 +228,7 @@ textarea {
   transform: translate(-50%, -50%);
   z-index: 1001;
   box-shadow: none;
+  display: none;
 }
 
 .cursor-flare {
@@ -242,3 +243,43 @@ textarea {
   transition: opacity 0.5s;
   filter: blur(10px);
 }
+
+
+
+/* ==home social icon glow== */
+
+.iconss a {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: all 0.2s ease-in;
+  border: 1px solid transparent;
+}
+
+
+
+
+.iconss a:hover {
+  color: #F04040;
+  box-shadow: 0 0 15px #F04040;
+  text-shadow: 0 0 5px #F04040;
+  border-color: #F04040;
+  border-width: 2px;
+}
+.iconss a i{
+  transition: all 0.2s ease-in;
+}
+.iconss a:hover i{
+  color: #F04040;
+}
+
+

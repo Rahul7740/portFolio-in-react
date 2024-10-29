@@ -38,7 +38,7 @@ function Home() {
               Front-end Developer
             </span>
           </h3>
-          <div className="flex items-center gap-3 mt-5 delay-scale-aniamtion">
+          <div className="flex items-center gap-3 mt-5 delay-scale-aniamtion iconss">
             {jsonData.map((item, index) => (
               <a
                 key={index}
@@ -46,15 +46,8 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
                 href={item.link}
-                className="text-[30px] w-[47px] h-[47px] flex items-center justify-center rounded-full transition-all duration-500 hover:rotate-[360deg] hover:shadow-[0_0_20px_#7e021f]"
               >
-                <i
-                  className={`fab ${
-                    item.name
-                  } text-[30px] transition-all duration-500 ${
-                    theme ? "text-black" : "text-white"
-                  }`}
-                ></i>
+                <i className={`fab ${item.name} ${theme ? "text-white":"text-black"}`}></i>
               </a>
             ))}
           </div>
