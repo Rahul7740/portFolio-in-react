@@ -9,7 +9,7 @@ function Contact() {
   return (
     <section>
       <div className="container">
-        <Heading name="Contect:" />
+        <Heading name="Contact:" />
         <div className="flex flex-col-reverse md:grid grid-cols-2 items-center h-[80vh] justify-center items-center">
           <div className="w-full">
             <h3

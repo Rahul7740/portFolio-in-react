@@ -19,13 +19,13 @@ function Profile() {
             >
               My name is{"  "}
               <span
-                className="bg-gradient-to-r from-[#7e021f] to-[#36010d] bg-clip-text text-transparent relative
-    before:content-[''] before:absolute before:bottom-[1px] before:rounded before:left-0 before:h-[2px] before:transition-all before:duration-300 before:w-full before:scale-100 before:opacity-0 before:-translate-y-1 hover:before:-translate-y-0 hover:before:opacity-100 before:bg-gradient-to-r before:from-[#7e021f] before:to-[#36010d]"
+                className={`bg-gradient-to-r ${theme ? "from-[#7e021f] to-[#36010d]" : "from-[#7e021f] to-[#c4687e]"} bg-clip-text text-transparent relative
+    before:content-[''] before:absolute before:bottom-[1px] before:rounded before:left-0 before:h-[2px] before:transition-all before:duration-300 before:w-full before:scale-100 before:opacity-0 before:-translate-y-1 hover:before:-translate-y-0 hover:before:opacity-100 before:bg-gradient-to-r before:from-[#7e021f] before:to-[#36010d]`}
               >
                 Rahul.
               </span>{" "}
               I am a{" "}
-              <span className="bg-gradient-to-r from-[#7e021f] to-[#36010d] bg-clip-text text-transparent relative">
+              <span className={`bg-gradient-to-r ${theme ? "from-[#7e021f] to-[#36010d]" : "from-[#7e021f] to-[#c4687e]"} bg-clip-text text-transparent relative`}>
                 Full-Stack-Developer.
               </span>{" "}
               <span ref={(el) => el && pump.current.push(el)}>

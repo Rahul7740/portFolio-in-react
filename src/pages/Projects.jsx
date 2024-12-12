@@ -12,7 +12,7 @@ function Projects() {
     <section>
       <div className="container mx-auto py-10">
         <Heading name="Projects:" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 pb-14">
           {jsonData.map((item, index) => (
             <div
               key={index}
@@ -45,7 +45,9 @@ function Projects() {
                   rel="noreferrer"
                   ref={(el) => el && pump.current.push(el)}
                   href={item.link}
-                  className="mt-2 text-[18x] font-bold bg-transparent transition-all duration-300 p-[3px_10px] border-[1px] border-solid border-white hover:border-[#e0433b] rounded   hover:bg-[#e0433b] text-white "
+                  className={`mt-2 text-[18x] font-bold bg-transparent transition-all duration-300 p-[3px_10px] border-[1px] border-solid  hover:border-[#e0433b] rounded   hover:bg-[#e0433b] ${
+                    theme ? "text-black border-black" : "text-white border-white"
+                  } `}
                 >
                   Link
                 </a>

@@ -18,9 +18,9 @@ function Home() {
           >
             <span ref={(el) => el && pump.current.push(el)}>Hi, I'm </span>
             <span
-              className="bg-gradient-to-r from-[#7e021f] to-[#36010d] bg-clip-text text-transparent relative
+              className={`bg-gradient-to-r ${theme ? "from-[#7e021f] to-[#36010d]" : "from-[#7e021f] to-[#c4687e]"} bg-clip-text text-transparent relative
                           before:content-[''] before:absolute before:bottom-3 before:left-0 before:h-1 before:transition-all before:duration-300 before:w-full before:scale-100 md:before:scale-0 before:opacity-0 hover:before:opacity-100 hover:before:scale-100 before:bg-gradient-to-r before:from-[#7e021f] before:to-[#36010d]
-                          "
+                          `}
             >
               Rahul 
             </span>
